@@ -1,10 +1,14 @@
 def authenticate_user(username, password):
-    # Placeholder implementation - replace with actual authentication logic
+    # Improved authentication logic with clearer validation
+    if not username or not password:
+        return False
+
     if username == "student" and password == "password":
         return True
-    else:
-        return False
+
+    return False
 
 
 if __name__ == "__main__":
-    print(authenticate_user("student", "password"))
+    result = authenticate_user("student", "password")
+    print("Authentication successful" if result else "Authentication failed")
