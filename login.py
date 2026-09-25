@@ -3,7 +3,7 @@ def authenticate_user(username, password):
     if not username or not password:
         return False
 
-    if username == "student" and password == "password":
+    if username == "teacher" and password == "teacher123":
         return True
 
     return False
